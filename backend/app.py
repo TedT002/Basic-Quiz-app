@@ -15,7 +15,7 @@ def index():
 
 @socketio.on("connect")
 def handle_connect():
-    print("-----> CONNECT İSTEĞİ ALINDI <-----") # EN TEMEL LOG
+    print("-----> CONNECT İSTEĞİ ALINDI <-----") # basic log
     print("-----> BİR KULLANICI BAĞLANDI (Socket.IO) <-----")
     print("CONNECT OLAYI TETİKLENDİ")
     emit("leaderboard_update", get_leaderboard())
